@@ -45,3 +45,4 @@ Se propone maquetar algunas paginas del proyecto de cuponeras epm utilizando uni
 - En el archivo styless.css se encuentra la importación de las fuentes para el proyecto
 - **No utilizar librerias de node js**
 - **Cualquier inquietud por favor preguntarnos**
+- **Todos deberán crear su propia rama, nadie debe hacer cambios directamente en la rama main**
