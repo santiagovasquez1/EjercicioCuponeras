@@ -43,3 +43,4 @@ Se propone maquetar algunas paginas del proyecto de cuponeras epm utilizando uni
 - El link del diseño de las pantallas es el siguiente: [Cuponera](https://www.figma.com/file/pNQ6wlNobvKAEq7azAtJjI/EPM-CUPONERAS-V.02?node-id=799%3A4853&t=imSDziMTiHZxnueh-0)
 - En el archivo styless.css se encuentra la importación de las fuentes para el proyecto
 - **No utilizar librerias de node js**
+- **Cualquier inquietud por favor preguntarnos**
