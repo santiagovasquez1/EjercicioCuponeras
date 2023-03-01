@@ -1,14 +1,14 @@
 @font-face {
-    font-family: 'VAGRoundedStd-Regular';
-    src: url(../assets/fonts/VAGRoundedStd-Regular.eot);
-    src: url(../assets/fonts/VAGRoundedStd-Regular.eot?#iefix) format('embedded-opentype'), url(../assets/fonts/VAGRoundedStd-Thin.woff) format('woff'), url(../assets/fonts/VAGRoundedStd-Thin.ttf) format('truetype');
+    font-family: 'VAGRoundedStd-Thin';
+    src: url(./assets/fonts/VAGRoundedStd-thin.eot);
+    src: url(./assets/fonts/VAGRoundedStd-thin.eot?#iefix) format('embedded-opentype'), url(./assets/fonts/VAGRoundedStd-Thin.woff) format('woff'), url(./assets/fonts/VAGRoundedStd-Thin.ttf) format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'VAGRoundedStd-Bold';
-    src: url(../assets/fonts/VAG\ Rounded\ Std\ Bold.otf);
+    src: url(./assets/fonts/VAGRoundedStd-Bold.otf);
     font-weight: normal;
     font-style: normal;
 }

@@ -33,10 +33,11 @@ Se propone maquetar algunas paginas del proyecto de cuponeras epm utilizando uni
 - Pantalla confirmación de impresión, en la pantalla cuando se de click sobre el boton "imprimir", nos deberia de llevar a la página de inicio
 ![Confirmacion impresion](./Pantallas/Selecci%C3%B3n%20de%20como%20recibir%20el%20recibo.png)
 
--Pantalla de envio al correo. El teclado de esta pantalla tendrá un comportamiento similar al teclado numerico, cuando el usuario de click en el boton "Enviar", se debera redirigir a la pantalla de inicio.
+- Pantalla de envio al correo. El teclado de esta pantalla tendrá un comportamiento similar al teclado numerico, cuando el usuario de click en el boton "Enviar", se debera redirigir a la pantalla de inicio.
 ![Envio al correo](./Pantallas/Selecci%C3%B3n%20de%20a%20donde%20enviar%20el%20recibo.png)
 
 ### Notas
+- Usar display grid, flex o block para los elementos
 - Las imágenes del proyecto se encuentran en la carpeta assets/images
 - Las fuentes que utiliza el proyecto se encuentran en la carpeta assets/fonts
 - Todos los scripts de javascript se deberán de guardar en la carpeta scripts.
