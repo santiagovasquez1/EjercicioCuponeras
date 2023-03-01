@@ -12,6 +12,7 @@ Se propone maquetar algunas paginas del proyecto de cuponeras epm utilizando uni
 - Enlazar varios htmls entre si a traves de links
 - Empezar a utilizar javascript para interactuar con el dom de la pagina
 - Utilizar herramientas de versionamiento de codigo como es git, la cual les permitira trabajar en equipo e ir integrando todo el proyecto
+- Para unir los cambios de cada uno deberán hacer pull request y decirnos a luis o a Santiago para su aprobación
 
 ### Pantallas a desarrollar
 
