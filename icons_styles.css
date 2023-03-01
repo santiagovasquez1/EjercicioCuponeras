@@ -1,0 +1,218 @@
+@font-face {
+    font-family: 'EPM-icons';
+    src: url('./assets/fonts/EPM-icons.eot?8byopb');
+    src: url('./assets/fonts/EPM-icons.eot?8byopb#iefix') format('embedded-opentype'), url('./assets/fonts/EPM-icons.ttf?8byopb') format('truetype'), url('./assets/fonts/EPM-icons.woff?8byopb') format('woff'), url('./assets/fonts/EPM-icons.svg?8byopb#EPM-icons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'EPM-icons' !important;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-direccion-residencia:before {
+    content: "\e92a";
+}
+
+.icon-Flecha-Abajo-circulo:before {
+    content: "\e92b";
+}
+
+.icon-Flecha-Arriba-circulo:before {
+    content: "\e92c";
+}
+
+.icon-Flecha-Derecha-circulo:before {
+    content: "\e92f";
+}
+
+.icon-Flecha-Izquierda-circulo:before {
+    content: "\e930";
+}
+
+.icon-cedula:before {
+    content: "\e929";
+}
+
+.icon-anterior:before {
+    content: "\e900";
+}
+
+.icon-siguiente:before {
+    content: "\e901";
+}
+
+.icon-abajo:before {
+    content: "\e902";
+}
+
+.icon-arriba:before {
+    content: "\e903";
+}
+
+.icon-primero:before {
+    content: "\e904";
+}
+
+.icon-ultimo:before {
+    content: "\e905";
+}
+
+.icon-atras:before {
+    content: "\e906";
+}
+
+.icon-borrar:before {
+    content: "\e907";
+}
+
+.icon-abono-factura:before {
+    content: "\e908";
+}
+
+.icon-certificado-prepago-energia:before {
+    content: "\e909";
+}
+
+.icon-certificado-prepago-agua:before {
+    content: "\e90a";
+}
+
+.icon-separacion-facturas:before {
+    content: "\e90b";
+}
+
+.icon-agregar:before {
+    content: "\e90c";
+}
+
+.icon-energia:before {
+    content: "\e90d";
+}
+
+.icon-gas:before {
+    content: "\e90e";
+}
+
+.icon-aguas:before {
+    content: "\e90f";
+}
+
+.icon-estado-cuenta-somos:before {
+    content: "\e910";
+}
+
+.icon-tarjeta-somos:before {
+    content: "\e911";
+}
+
+.icon-factura:before {
+    content: "\e912";
+}
+
+.icon-impuestos:before {
+    content: "\e913";
+}
+
+.icon-medidor:before {
+    content: "\e914";
+}
+
+.icon-lupa:before {
+    content: "\e915";
+}
+
+.icon-caneca:before {
+    content: "\e916";
+}
+
+.icon-cargar:before {
+    content: "\e917";
+}
+
+.icon-calendario-check:before {
+    content: "\e918";
+}
+
+.icon-eliminar-circulo:before {
+    content: "\e919";
+}
+
+.icon-anuncio:before {
+    content: "\e91a";
+}
+
+.icon-check-circulo:before {
+    content: "\e91b";
+}
+
+.icon-cerrrar-circulo:before {
+    content: "\e91c";
+}
+
+.icon-agregar-circulo:before {
+    content: "\e91d";
+}
+
+.icon-cerrar:before {
+    content: "\e91e";
+}
+
+.icon-check:before {
+    content: "\e91f";
+}
+
+.icon-direccion:before {
+    content: "\e920";
+}
+
+.icon-numero-documento:before {
+    content: "\e921";
+}
+
+.icon-nota:before {
+    content: "\e922";
+}
+
+.icon-editar-nota:before {
+    content: "\e923";
+}
+
+.icon-editar:before {
+    content: "\e924";
+}
+
+.icon-enlace:before {
+    content: "\e925";
+}
+
+.icon-filtro:before {
+    content: "\e926";
+}
+
+.icon-home:before {
+    content: "\e927";
+}
+
+.icon-microfono:before {
+    content: "\e928";
+}
+
+.icon-ojo:before {
+    content: "\e92d";
+}
+
+.icon-tres-puntos:before {
+    content: "\e92e";
+}
