@@ -13,3 +13,143 @@
     font-weight: normal;
     font-style: normal;
 }
+
+:root{
+    --dark-green: #007934;
+    --green: #36A21D;
+    --light-green: #7BB928;
+    --yellow: #D4B012;
+    --blue: #0D728E;
+    --light-grey: #F6F6F6;
+    --grey: #B9BBBB;
+    --dark-grey: #707070;
+
+    --box-shadow:  0px 1px 3px rgba(0, 0, 0, 0.3), 0px 3px 12px rgba(0, 0, 0, 0.1);
+    --box-shadow-hedaer: box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+/* HEADER */
+
+.header-container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    Height:  85px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.title__header{
+    font-family: 'VAGRoundedStd-Thin';
+
+    font-style: normal;
+    font-size: 1.9rem;
+    font-weight: 700;
+    line-height: 52px;
+
+    color: var(--dark-green);
+
+    margin-right: 2%;
+    margin-left: 5%;
+}
+
+.line__header{
+    width: 2px;
+    height: 47px;
+
+    background-color: var(--grey);
+
+    margin-right: 2%;
+}
+
+.logo__header{
+    Width: 125px;
+}
+
+/* MAIN */
+.title__main{
+    font-family: 'VAGRoundedStd-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 36px;
+    color: var(--dark-grey);
+
+    margin: 2% 4%;
+}
+
+.cards__main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    justify-content: center;
+    align-items: center;
+
+    margin: 2% 5.5%;
+
+    cursor: pointer;
+}
+  
+.card-container {
+    background-color: var(--light-grey);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3), 0px 3px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    padding: 5px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+
+    Height: 250px;
+    Left: 425px;
+
+    margin-bottom: 7%;
+}
+  
+.card-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0px 3px 12px rgba(0, 0, 0, 0.1);
+}
+
+.top__card{
+    background-color: white;
+    gap: 6px;
+    border-radius: 20px 20px 0px 0px;
+
+    padding: 16px 12px 8px;
+
+    height: 135px;
+
+}
+
+.bottom__card{
+    text-align: left;
+    padding: 8px 8px 10px;
+}
+
+.title__card{
+    font-family: 'VAGRoundedStd-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 36px;
+    color: var(--dark-green);
+}
+
+.description__card{
+    font-family: 'VAGRoundedStd-Thin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 24px;
+    color: var(--dark-grey);
+}
+
+
+
+
