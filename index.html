@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
-    <title>Cuponeras</title>
+    <title>Menu inicio</title>
 </head>
 
 <body>
@@ -25,6 +25,22 @@
 
     </header>
 
+    <section class="scroll-section" id="scroll-buttons">
+
+        <button onclick="scrollToTop()" class="button__scroll">
+
+            <img class="img__scroll img-arrow1" src="./assets/images/scroll-arrow.svg" alt="arrow icon">
+
+        </button>
+
+        <button onclick="scrollToBottom()" class="button__scroll">
+
+            <img class="img__scroll img-arrow2" src="./assets/images/scroll-arrow.svg" alt="arrow icon">                
+
+        </button>
+
+    </section>
+
     <main class="main-container">
 
         <h1 class="title__main">
@@ -33,38 +49,143 @@
 
         </h1>
 
-        <div class="cards__main">
+        <div class="cards__main" id="content-container">
 
-            <div class="card-container">
+                <div class="card-row">
 
-                <div class="top__card">
+                    <div class="card-container">
 
-                    <img class="img__card" src="./assets/images/factura.svg" alt="icono de factura">
+                        <div class="top__card">
+        
+                            <img class="img__card img_1" src="./assets/images/factura.svg" alt="icono de factura">
 
-                    <h3 class="title__card">
-                        Cupones de pago
-                    </h3>
-
+                            <h3 class="title__card">
+                                Cupones de pago
+                            </h3>
+        
+                        </div>
+        
+                        <div class="bottom__card">
+        
+                            <p class="description__card">
+        
+                                Selecciona esta opción si quieres realizar abonos a tus facturas (actuales o pendientes de pago).  
+        
+                            </p>
+        
+                        </div>
+    
                 </div>
 
-                <div class="bottom__card">
+                <div class="card-container">
 
-                    <p class="description__card">
-
-                        Selecciona esta opción si quieres realizar abonos a tus facturas (actuales o pendientes de pago).   
-
-                    </p>
-
+                    <div class="top__card">
+    
+                        <img class="img__card img_2" src="./assets/images/iconoAbonoDeFactura.svg" alt="icono abono de factura">
+    
+                        <h3 class="title__card">
+                            Abono a facturas
+                        </h3>
+    
+                    </div>
+    
+                    <div class="bottom__card">
+    
+                        <p class="description__card">
+    
+                            Selecciona esta opción si quieres realizar abonos a tus facturas (actuales o pendientes de pago).  
+    
+                        </p>
+    
+                    </div>
+    
                 </div>
+
+                <div class="card-container">
+
+                    <div class="top__card">
+    
+                        <img class="img__card img_1" src="./assets/images/nota.svg" alt="icono nota">    
+                        <h3 class="title__card">
+                            Certificado de aguas y energía prepago
+                        </h3>
+    
+                    </div>
+    
+                    <div class="bottom__card">
+    
+                        <p class="description__card">
+    
+                            Selecciona esta opción si quieres realizar abonos a tus facturas (actuales o pendientes de pago).  
+    
+                        </p>
+    
+                    </div>
+    
+                </div>
+
+                <div class="card-container">
+
+                    <div class="top__card">
+    
+                        <img class="img__card img_3" src="./assets/images/estado cuenta somos.svg" alt="icono nota">    
+                        <h3 class="title__card">
+                            Estado de cuenta somos
+                        </h3>
+    
+                    </div>
+    
+                    <div class="bottom__card">
+    
+                        <p class="description__card">
+    
+                            Selecciona esta opción si quieres realizar abonos a tus facturas (actuales o pendientes de pago).  
+    
+                        </p>
+    
+                    </div>
+    
+                </div>
+
+                
 
             </div>
 
 
+            <!-- ############################################################################## -->
+
+
+            <div class="card-row">
+
+                <div class="card-container">
+
+                    <div class="top__card">
+    
+                        <img class="img__card img_1" src="./assets/images/factura.svg" alt="icono de factura">
+
+                        <h3 class="title__card">
+                            Cupones de pago
+                        </h3>
+    
+                    </div>
+    
+                    <div class="bottom__card">
+    
+                        <p class="description__card">
+    
+                            Selecciona esta opción si quieres realizar abonos a tus facturas (actuales o pendientes de pago).  
+    
+                        </p>
+    
+                    </div>
+
+            </div>
+
             <div class="card-container">
 
                 <div class="top__card">
 
-                    <img class="img__card" src="./assets/images/iconoAbonoDeFactura.svg" alt="icono abono de factura">
+                    <img class="img__card img_2" src="./assets/images/iconoAbonoDeFactura.svg" alt="icono abono de factura">
 
                     <h3 class="title__card">
                         Abono de facturas
@@ -84,14 +205,11 @@
 
             </div>
 
-
-
             <div class="card-container">
 
                 <div class="top__card">
 
-                    <img class="img__card" src="./assets/images/nota.svg" alt="icono nota">
-
+                    <img class="img__card img_1" src="./assets/images/nota.svg" alt="icono nota">    
                     <h3 class="title__card">
                         Certificado de aguas y energía prepago
                     </h3>
@@ -102,7 +220,7 @@
 
                     <p class="description__card">
 
-                        Selecciona esta opción si quieres realizar abonos a tus facturas (actuales o pendientes de pago).   
+                        Selecciona esta opción si quieres realizar abonos a tus facturas (actuales o pendientes de pago).  
 
                     </p>
 
@@ -110,14 +228,11 @@
 
             </div>
 
-
-
             <div class="card-container">
 
                 <div class="top__card">
 
-                    <img class="img__card" src="./assets/images/estado cuenta somos.svg" alt="icono nota">
-
+                    <img class="img__card img_3" src="./assets/images/estado cuenta somos.svg" alt="icono nota">    
                     <h3 class="title__card">
                         Estado de cuenta somos
                     </h3>
@@ -128,7 +243,7 @@
 
                     <p class="description__card">
 
-                        Selecciona esta opción si quieres realizar abonos a tus facturas (actuales o pendientes de pago).   
+                        Selecciona esta opción si quieres realizar abonos a tus facturas (actuales o pendientes de pago).  
 
                     </p>
 
@@ -136,42 +251,20 @@
 
             </div>
 
-
-
-            <div class="card-container">
-
-                <div class="top__card">
-
-                    <img class="img__card" src="./assets/images/separacion facturas.svg" alt="icono nota">
-
-                    <h3 class="title__card">
-                        Separación de facturas
-                    </h3>
-
-                </div>
-
-                <div class="bottom__card">
-
-                    <p class="description__card">
-
-                        Selecciona esta opción si quieres realizar abonos a tus facturas (actuales o pendientes de pago).   
-
-                    </p>
-
-                </div>
-
-            </div>
             
 
+        </div>
+
+        <div class="card-row">
 
             <div class="card-container">
 
                 <div class="top__card">
 
-                    <img class="img__card" src="./assets/images/impuestos.svg" alt="icono nota">
+                    <img class="img__card img_1" src="./assets/images/factura.svg" alt="icono de factura">
 
                     <h3 class="title__card">
-                        Creditos somos para declaración de renta
+                        Cupones de pago
                     </h3>
 
                 </div>
@@ -180,41 +273,367 @@
 
                     <p class="description__card">
 
-                        Selecciona esta opción si quieres realizar abonos a tus facturas (actuales o pendientes de pago).   
+                        Selecciona esta opción si quieres realizar abonos a tus facturas (actuales o pendientes de pago).  
 
                     </p>
 
                 </div>
 
-            </div>
+        </div>
 
+        <div class="card-container">
 
+            <div class="top__card">
 
-            <div class="card-container">
+                <img class="img__card img_2" src="./assets/images/iconoAbonoDeFactura.svg" alt="icono abono de factura">
 
-                <div class="top__card">
-
-                    <img class="img__card" src="./assets/images/calendario check.svg" alt="icono nota">
-
-                    <h3 class="title__card">
-                        Ultima factura
-                    </h3>
-
-                </div>
-
-                <div class="bottom__card">
-
-                    <p class="description__card">
-
-                        Selecciona esta opción si quieres realizar abonos a tus facturas (actuales o pendientes de pago).   
-
-                    </p>
-
-                </div>
+                <h3 class="title__card">
+                    Abono de facturas
+                </h3>
 
             </div>
 
+            <div class="bottom__card">
 
+                <p class="description__card">
+
+                    Selecciona esta opción si quieres realizar abonos a tus facturas (actuales o pendientes de pago).  
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="card-container">
+
+            <div class="top__card">
+
+                <img class="img__card img_1" src="./assets/images/nota.svg" alt="icono nota">    
+                <h3 class="title__card">
+                    Certificado de aguas y energía prepago
+                </h3>
+
+            </div>
+
+            <div class="bottom__card">
+
+                <p class="description__card">
+
+                    Selecciona esta opción si quieres realizar abonos a tus facturas (actuales o pendientes de pago).  
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="card-container">
+
+            <div class="top__card">
+
+                <img class="img__card img_3" src="./assets/images/estado cuenta somos.svg" alt="icono nota">    
+                <h3 class="title__card">
+                    Estado de cuenta somos
+                </h3>
+
+            </div>
+
+            <div class="bottom__card">
+
+                <p class="description__card">
+
+                    Selecciona esta opción si quieres realizar abonos a tus facturas (actuales o pendientes de pago).  
+
+                </p>
+
+            </div>
+
+        </div>
+
+        
+
+    </div>
+
+    <div class="card-row">
+
+        <div class="card-container">
+
+            <div class="top__card">
+
+                <img class="img__card img_1" src="./assets/images/factura.svg" alt="icono de factura">
+
+                <h3 class="title__card">
+                    Cupones de pago
+                </h3>
+
+            </div>
+
+            <div class="bottom__card">
+
+                <p class="description__card">
+
+                    Selecciona esta opción si quieres realizar abonos a tus facturas (actuales o pendientes de pago).  
+
+                </p>
+
+            </div>
+
+    </div>
+
+    <div class="card-container">
+
+        <div class="top__card">
+
+            <img class="img__card img_2" src="./assets/images/iconoAbonoDeFactura.svg" alt="icono abono de factura">
+
+            <h3 class="title__card">
+                Abono de facturas
+            </h3>
+
+        </div>
+
+        <div class="bottom__card">
+
+            <p class="description__card">
+
+                Selecciona esta opción si quieres realizar abonos a tus facturas (actuales o pendientes de pago).  
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="card-container">
+
+        <div class="top__card">
+
+            <img class="img__card img_1" src="./assets/images/nota.svg" alt="icono nota">    
+            <h3 class="title__card">
+                Certificado de aguas y energía prepago
+            </h3>
+
+        </div>
+
+        <div class="bottom__card">
+
+            <p class="description__card">
+
+                Selecciona esta opción si quieres realizar abonos a tus facturas (actuales o pendientes de pago).  
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="card-container">
+
+        <div class="top__card">
+
+            <img class="img__card img_3" src="./assets/images/estado cuenta somos.svg" alt="icono nota">    
+            <h3 class="title__card">
+                Estado de cuenta somos
+            </h3>
+
+        </div>
+
+        <div class="bottom__card">
+
+            <p class="description__card">
+
+                Selecciona esta opción si quieres realizar abonos a tus facturas (actuales o pendientes de pago).  
+
+            </p>
+
+        </div>
+
+    </div>
+
+    
+
+</div>
+
+<div class="card-row">
+
+    <div class="card-container">
+
+        <div class="top__card">
+
+            <img class="img__card img_1" src="./assets/images/factura.svg" alt="icono de factura">
+
+            <h3 class="title__card">
+                Cupones de pago
+            </h3>
+
+        </div>
+
+        <div class="bottom__card">
+
+            <p class="description__card">
+
+                Selecciona esta opción si quieres realizar abonos a tus facturas (actuales o pendientes de pago).  
+
+            </p>
+
+        </div>
+
+</div>
+
+<div class="card-container">
+
+    <div class="top__card">
+
+        <img class="img__card img_2" src="./assets/images/iconoAbonoDeFactura.svg" alt="icono abono de factura">
+
+        <h3 class="title__card">
+            Abono de facturas
+        </h3>
+
+    </div>
+
+    <div class="bottom__card">
+
+        <p class="description__card">
+
+            Selecciona esta opción si quieres realizar abonos a tus facturas (actuales o pendientes de pago).  
+
+        </p>
+
+    </div>
+
+</div>
+
+<div class="card-container">
+
+    <div class="top__card">
+
+        <img class="img__card img_1" src="./assets/images/nota.svg" alt="icono nota">    
+        <h3 class="title__card">
+            Certificado de aguas y energía prepago
+        </h3>
+
+    </div>
+
+    <div class="bottom__card">
+
+        <p class="description__card">
+
+            Selecciona esta opción si quieres realizar abonos a tus facturas (actuales o pendientes de pago).  
+
+        </p>
+
+    </div>
+
+</div>
+
+<div class="card-container">
+
+    <div class="top__card">
+
+        <img class="img__card img_3" src="./assets/images/estado cuenta somos.svg" alt="icono nota">    
+        <h3 class="title__card">
+            Estado de cuenta somos
+        </h3>
+
+    </div>
+
+    <div class="bottom__card">
+
+        <p class="description__card">
+
+            Selecciona esta opción si quieres realizar abonos a tus facturas (actuales o pendientes de pago).  
+
+        </p>
+
+    </div>
+
+</div>
+
+
+
+</div>
+
+
+
+            <!-- ################################################################################# -->
+
+
+            <div class="card-row">
+
+                <div class="card-container">
+
+                    <div class="top__card">
+    
+                        <img class="img__card img_1" src="./assets/images/separacion facturas.svg" alt="icono nota">
+                        <h3 class="title__card">
+                            Separación de facturas
+                        </h3>
+    
+                    </div>
+    
+                    <div class="bottom__card">
+    
+                        <p class="description__card">
+    
+                            Selecciona esta opción si quieres realizar abonos a tus facturas (actuales o pendientes de pago).  
+    
+                        </p>
+    
+                    </div>
+    
+                </div>
+
+                <div class="card-container">
+
+                    <div class="top__card">
+    
+                        <img class="img__card img_1" src="./assets/images/impuestos.svg" alt="icono impuestos">
+    
+                        <h3 class="title__card">
+                            Creditos somos para declaración de renta
+                        </h3>
+    
+                    </div>
+    
+                    <div class="bottom__card">
+    
+                        <p class="description__card">
+    
+                            Selecciona esta opción si quieres realizar abonos a tus facturas (actuales o pendientes de pago).  
+    
+                        </p>
+    
+                    </div>
+
+                </div>
+
+                <div class="card-container">
+
+                    <div class="top__card">
+    
+                        <img class="img__card img_1" src="./assets/images/calendario check.svg" alt="icono nota">
+
+                        <h3 class="title__card">
+                            Última factura
+                        </h3>
+    
+                    </div>
+    
+                    <div class="bottom__card">
+    
+                        <p class="description__card">
+    
+                            Selecciona esta opción si quieres realizar abonos a tus facturas (actuales o pendientes de pago).  
+    
+                        </p>
+    
+                    </div>
+
+                </div>
+
+            </div>
 
 
 
@@ -222,10 +641,37 @@
 
         </div>
 
-
     </main>
 
 
 </body>
+
+<script>
+
+    function scrollToTop() {
+        window.scrollBy(0, -385);
+    }
+
+    function scrollToBottom() {
+        window.scrollBy(0, 385);
+    }
+
+    const contentContainer = document.getElementById("content-container");
+    const scrollSection = document.getElementById("scroll-buttons");
+
+    function checkOverflow() {
+        if (contentContainer.offsetHeight < contentContainer.scrollHeight ||
+            contentContainer.offsetWidth < contentContainer.scrollWidth) {
+            scrollSection.style.display = "block";
+        } else {
+            scrollSection.style.display = "none";
+        }
+    }
+
+    checkOverflow();
+
+    window.addEventListener("resize", checkOverflow);
+
+</script>
 
 </html>
