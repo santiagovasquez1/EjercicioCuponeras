@@ -18,8 +18,7 @@
     <main class="main-container">
 
         <div class="head_content">
-            <h1 class="title__main">Separación de facturas de energía</h1>
-                <img class="bulb" src="/assets/images/EnergíaAmarillo.svg" />
+            <h1 class="title__main">Separación de facturas de energía <img class="bulb" src="/assets/images/EnergíaAmarillo.svg" /></h1>
         </div>
 
         <div class="route">
@@ -31,22 +30,23 @@
             <h4 class="subt_contrato">Digita el número del contrato</h4>
             <div class="calculadora">
                 <div class="calculadora_content">
-                    <div class="display">0</div>
-                        <button class="button number">1</button>
-                        <button class="button number">2</button>
-                        <button class="button number">3</button>
-                        <a class="link_continuar" href="#"><button class="button function continuar">Continuar</button></a>
-                        <button class="button number">4</button>
-                        <button class="button number">5</button>
-                        <button class="button number">6</button>
-                        <button class="button function borrar">Borrar</button>
-                        <button class="button number">7</button>
-                        <button class="button number">8</button>
-                        <button class="button number">9</button>
-                        <a class="link_cancelar" href="/views/separacionFacturas.html"><button class="button function cancelar">Cancelar</button></a>
+                    <div class="display" id="display"></div>
+                        <button class="button number" id="1">1</button>
+                        <button class="button number" id="2">2</button>
+                        <button class="button number" id="3">3</button>
+                        <a class="link_continuar" href="#"><button class="button function continuar" id="continue">Continuar</button></a>
+                        <button class="button number" id="4">4</button>
+                        <button class="button number" id="5">5</button>
+                        <button class="button number" id="6">6</button>
+                        <button class="button function borrar" id="clear">Borrar</button>
+                        <button class="button number" id="7">7</button>
+                        <button class="button number" id="8">8</button>
+                        <button class="button number" id="9">9</button>
+                        <a class="link_cancelar" href="/views/separacionFacturas.html"><button class="button function cancelar" id="cancel">Cancelar</button></a>
                         <button class="none"></button>
-                        <button class="button number">0</button>
-                        <button clas="button imagen"><img src="/assets/images/Vector (Stroke).png  " /></button>
+                        <button class="button number" id="0">0</button>
+                        <button class="none"></button>
+                        <button class="button imagen" id="undo"><img src="/assets/images/Vector(Stroke).svg"></button>
                 </div>                    
             </div>
         </div>
