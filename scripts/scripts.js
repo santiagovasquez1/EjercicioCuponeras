@@ -1,41 +1,15 @@
-window.addEventListener('load', ()=>{
-    const display = document.querySelector('.display');
-    const keypadButtons = document.getElementsByClassName('button');
+const display = document.querySelector("#display");
+const buttons = document.querySelectorAll("button");
 
-    const keypadButtonsArray = Array.from(keypadButtons);
-
-    keypadButtonsArray.forEach( (button) =>{
-        button.addEventListener('click', ()=> {
-            calculadora(button, display);
-        })
-    })
-
+buttons.forEach((item) => {
+  item.onclick = () => {
+    if (item.id == "clear" || item.id =="continue" || item.id =="cancel") {
+      display.innerText = "";
+    } else if (item.id == "undo") {
+      let string = display.innerText.toString();
+      display.innerText = string.substr(0, string.length - 1);
+    } else {
+      display.innerText += item.id;
+    }
+  };
 });
-
-function calculadora(button, display){
-    switch (button.innerHTML) {
-        case "Borrar":
-            borrar(display);
-            break;
-        case "Continuar":
-            borrar(display);
-            break;
-        case "Cancelar":
-            borrar(display);
-            break;    
-        default:
-            actualizar(display, button);
-            break;
-    }
-}
-
-function actualizar(display, button){
-    if (display.innerHTML == '0'){
-        display.innerHTML = '';
-    }
-    display.innerHTML += button.innerHTML;
- }
-
-function borrar(display){
-   display.innerHTML = '0';
-}
