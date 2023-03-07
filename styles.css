@@ -185,8 +185,6 @@ body{
     margin-right: 2%;
 }
 
-.logo__header{
-}
 
 .title__main{
     font-family: 'VAGRoundedStd-Bold';
@@ -227,20 +225,11 @@ body{
     padding: 5px;
     text-align: center;
     transition: all 0.3s ease-in-out;
-
     Height: 310px;
-
-
-
     Left: 425px;
     margin-bottom: 7%;
-
     width: 350px;
-
-
-
     cursor: pointer;
-
 }
   
 .card-container:hover {
@@ -253,9 +242,7 @@ body{
     gap: 6px;
     border-radius: 20px 20px 0px 0px;
     padding: 16px 12px 8px;
-
     height: 215px;
-
 }
 
 .bottom__card{
@@ -276,8 +263,6 @@ body{
     font-family: 'VAGRoundedStd-Thin';
     font-style: normal;
     font-weight: 400;
-
-
     font-size: 1.075rem;
     line-height: 24px;
     color: var(--dark-grey);
@@ -307,7 +292,6 @@ body{
     font-size: 2.57rem;
     line-height: 36px;
     color: var(--dark-green);
-
     margin: 2% 4%;
 }
 
@@ -329,7 +313,6 @@ body{
     font-size: 2.3rem;
     line-height: 36px;
     color: var(--dark-grey);
-
     margin-bottom: 8%;
     margin-top: -2%;
 }
@@ -348,7 +331,6 @@ body{
     align-items: center;
     justify-content: center;
     text-align: center;
-
     margin-left: -10%;
 }
 
@@ -358,18 +340,13 @@ body{
     align-items: center;
     padding: 48px 0px;
     gap: 24px;
-
     position: absolute;
     width: 70%;
     height: 255px;
-
     background: var(--light-grey);
-
     border: 1px solid var(--grey);
     border-radius: 16px;
-
     left: 14.5%;
-
     margin-top: 1%;
 }
 
@@ -380,7 +357,6 @@ body{
     font-size: 1.5rem;
     line-height: 1.6rem;
     color: var(--dark-green);
-
     margin-top: -1.5%;
 }
 
@@ -399,18 +375,10 @@ body{
 
 .button__support{
     box-sizing: border-box;
-
-
     width: 300px;
     height: 45px;
-
     margin-right: 4%;
-
-
     background: white;
-
-    
-
     font-family: 'VAGRoundedStd-Bold';
     font-style: normal;
     font-weight: 300;
@@ -420,12 +388,9 @@ body{
 
 .button__white{
     color: var(--dark-green);
-
     border: 1.60588px solid var(--dark-green);
     border-radius: 32.1176px;
-
     transition: all 0.3s ease-in-out;
-
     cursor: pointer;
 }
 
