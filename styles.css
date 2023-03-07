@@ -60,7 +60,11 @@ body{
 .button__scroll {
     position: absolute;
 }
-  
+
+#scroll-buttons{
+    display: none;
+}
+
 .button__scroll:first-child {
     top: 0;
 }
@@ -72,13 +76,11 @@ body{
 .scroll-section{
     position: fixed;
     top: 425px;
-    right: 0;
-    margin: 0 5% 5% 0;
+    right: 125px;
     z-index: 1;
 }
 
 .button__scroll{
-    
     justify-content: center;
     align-items: center;
     width: 70px;
@@ -94,6 +96,10 @@ body{
     background-color: var(--dark-grey);
 }
 
+.button-on-click{
+    background-color: var(--grey)
+}
+
 .img__scroll{
     width: 40px;
 }
@@ -106,6 +112,50 @@ body{
     transform: rotate(-90deg);
 }
 
+/* NAV HOME */
+.home-nav-container {
+    position: absolute;
+    right: 80px;
+    top: 170px;
+}
+  
+.nav__home {
+    display: flex;
+}
+  
+.content__home-nav {
+    display: flex;
+    align-items: center;
+    margin-right: 70px;
+}
+  
+.back__content-home {
+    margin-left: 10px;
+}
+  
+.text__home-nav {
+    font-family: 'VAGRoundedStd-Thin';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.3rem;
+    line-height: 36px;
+    color: var(--dark-green);
+    text-decoration-line: underline;
+}
+  
+.text__home-nav:hover {
+    color: var(--green);
+}
+  
+.home-icon__home-nav,
+.back-icon__home-nav {
+    width: 30px;
+    height: 30px;
+    margin-right: 17px;
+}
+
+
+
 /* HEADER */
 .header-container{
     display: flex;
@@ -116,7 +166,7 @@ body{
 }
 
 .title__header{
-    font-family: 'VAGRoundedStd-Thin';
+    font-family: 'VAGRoundedStd-bold';
 
     font-style: normal;
     font-size: 2.3rem;
@@ -149,6 +199,7 @@ main{
 
 .cards-container{
     margin-top: 12%;
+    min-width: 323.867px;
 }
 
 .title__main{
@@ -177,6 +228,7 @@ main{
     justify-content: center;
     grid-column: 1/5;
     margin-bottom: -5%;
+    min-width: 1478.33px;
 }
 
 .card-row .card-container{
@@ -231,7 +283,7 @@ main{
 .title__card{
     font-family: 'VAGRoundedStd-Bold';
     font-style: normal;
-    font-weight: 700;
+    font-weight: 300;
     font-size: 2rem;
     line-height: 36px;
     color: var(--dark-green);
@@ -260,9 +312,6 @@ main{
     width: 102px;
 }
 
-
-
-
 /* MAIN AYUDA AL PLANETA */
 .support-container{
     justify-content: center;
@@ -287,7 +336,7 @@ main{
 }
 
 .img__awareness{
-    width: 20%;
+    width: 400px;
 }
 
 .title__awareness{
@@ -404,7 +453,7 @@ main{
     border: 1.60588px solid var(--dark-green);
     border-radius: 32.1176px;
 
-    transform: translateY(-3px);
+    transform: translateY(-1px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0px 3px 12px rgba(0, 0, 0, 0.1);
 }
 
@@ -421,13 +470,13 @@ main{
 }
 
 .button__green:hover{
-    background-color: var(--light-green);
+    background-color: var(--dark-green);
     color: white;
 
-    border: 1.60588px solid var(--light-green);
+    border: 1.60588px solid var(--dark-green);
     border-radius: 32.1176px;
 
-    transform: translateY(-3px);
+    transform: translateY(-1px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0px 3px 12px rgba(0, 0, 0, 0.1);
 }
 

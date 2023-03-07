@@ -25,15 +25,15 @@
 
     </header>
 
-    <section class="scroll-section" id="scroll-buttons">
+    <section class="scroll-section" id="scroll-buttons" >
 
-        <button onclick="scrollToTop()" class="button__scroll">
+        <button onclick="scrollToTop()" class="button__scroll" id="button-scroll">
 
             <img class="img__scroll img-arrow1" src="./assets/images/scroll-arrow.svg" alt="arrow icon">
 
         </button>
 
-        <button onclick="scrollToBottom()" class="button__scroll">
+        <button onclick="scrollToBottom()" class="button__scroll" id="button-scroll">
 
             <img class="img__scroll img-arrow2" src="./assets/images/scroll-arrow.svg" alt="arrow icon">                
 
@@ -656,21 +656,16 @@
         window.scrollBy(0, 385);
     }
 
-    const contentContainer = document.getElementById("content-container");
-    const scrollSection = document.getElementById("scroll-buttons");
+    var windowHeight = window.innerHeight;
+    var totalWindowHeight = document.body.offsetHeight;
 
-    function checkOverflow() {
-        if (contentContainer.offsetHeight < contentContainer.scrollHeight ||
-            contentContainer.offsetWidth < contentContainer.scrollWidth) {
-            scrollSection.style.display = "block";
-        } else {
-            scrollSection.style.display = "none";
-        }
+    if ( totalWindowHeight > windowHeight) {
+        var button = document.getElementById("scroll-buttons");
+        button.style.display = "block";
     }
 
-    checkOverflow();
-
-    window.addEventListener("resize", checkOverflow);
+    console.log(document.body.offsetHeight);
+    console.log(window.innerHeight);
 
 </script>
 
