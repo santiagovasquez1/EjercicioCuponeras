@@ -139,24 +139,30 @@
     color: var(--dark-grey);
 }
 
-----------------------------------------------------------------------------
 
+
+.container_separacionEnergia {
+    width: 100%;
+
+}
+
+}
 .head_content {
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 100%;
 }
 
 .head_content .title__main {
     color: var(--yellow);
 }
-
+.head_content2 .title__main {
+    color: var(--dark-grey);
+    font-size: 1.5rem;
+    margin: 2% 1% 1% 13%;
+}
 .bulb {
-    padding-left: .2rem;
     width: 2rem;
-    height: 2rem;
-} 
+}
 
 .route {
     display: flex;
@@ -169,6 +175,7 @@
     margin: 0 1% 2% 4%;
 }
 
+
 span {
     display: flex;
     align-items: center;
@@ -179,7 +186,6 @@ span {
     display: flex;
     color: #007934;
     text-decoration-line: underline;
-    justify-content: center;
 }
 
 .link_inicio a:visited {
@@ -196,7 +202,6 @@ span {
 
 .house {
     width: 2rem;
-    margin-left: 3rem;
 }
 
 .in_contrato {
@@ -205,13 +210,15 @@ span {
     flex-direction: column;
     align-items: center;
     font-family: 'VAGRoundedStd-Bold';
+    gap: 1rem;
     font-style: normal;
 }
 
 .subt_contrato {
+    font-style: normal;
     font-weight: 700;
     font-size: 1rem;
-    margin-top: 1%;
+    margin-top: 3%;
     line-height: 1.7rem;
     color: var(--dark-grey);
 }
@@ -231,10 +238,9 @@ span {
     width: 2.5rem;
     height: 2.5rem;
     font-family: 'VAGRoundedStd-Bold';
-    font-style: normal;
     cursor: pointer;
     border-radius: 2rem;   
-    font-size: 1.8rem;
+    font-size: 2rem;
     border: none;
     background-color: #ffffff;
     justify-content: center;
@@ -250,8 +256,8 @@ span {
 
 .function {
     font-family: 'VAGRoundedStd-Bold';
-    font-style: normal;
     background-color: #ffffff;
+    font-style: normal;
     font-weight: 700;
     font-size: 1rem;
     line-height: 1.7rem;
@@ -295,10 +301,10 @@ button:focus {
 }
 
 .display {
-    display: block;
     font-family: 'VAGRoundedStd-Thin';
-    font-style: normal;
+    font-weight: bold;
     background-color: #ffffff;
+    width: 100%;
     height: 2.5rem;
     grid-column: 1/-1;
     padding-right: 4%;
@@ -306,6 +312,7 @@ button:focus {
     border-radius: 2rem;
     font-size: 2rem;
     border: 3px solid var(--dark-green);
+    
 }
 
 .select_factura {
@@ -324,8 +331,7 @@ button:focus {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     align-items: center;
-    justify-content: center;
-    text-align: center;    
+    justify-content: center;    
 }
 
 .energy_card:hover,
@@ -369,6 +375,76 @@ button:focus {
     color: #ffffff;
 }
 
+
+/* cupones factura*/
+.cupones-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+    .cupones-container .title__main {
+        font-size: 1.5rem;
+        color: var(--dark-grey);
+        margin: 1% 1% 1% 1%;
+    }
+    .cupones-container .stitle-cupon {
+        width: 100%;
+        font-family: 'VAGRoundedStd-Bold';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 4rem;
+        line-height: 0rem;
+        color: var(--green);
+        margin: 1% 1% 1% 1%;
+    }
+.stitle-cupon {
+    width: 100%;
+    font-family: 'VAGRoundedStd-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 0rem;
+    color: var(--green);
+    margin: 1% 1% 1% 13%;
+}
+
+/*Enviar correo*/
+.teclado {
+    justify-content: center;
+}
+
+.teclado_content {
+    background-color: var(--light-grey);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 2fr;
+    padding: 0.5rem;
+    gap: .5rem;
+    border-radius: 1rem;
+}
+    .teclado_content .correos {
+        font-family: 'VAGRoundedStd-Bold';
+        cursor: pointer;
+        border-radius: 2rem;
+        font-size: 2rem;
+        border: none;
+        background-color: #ffffff;
+        justify-content: center;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3), 0px 3px 12px rgba(0, 0, 0, 0.1);
+        color: var(--dark-green);
+        box-sizing: border-box;
+        grid-column:span 4;
+        /*grid-template-columns: 1fr 1fr 3fr;*/
+    }
+.eCorreo {
+    border: none;
+    background-color: var(--dark-green);
+    color: #ffffff;
+    padding: 15px 28px 15px 24px;
+    border-radius: 8px;
+    left: 10%
+}
 .botones {
     display: flex;
     margin-top: 1%;
