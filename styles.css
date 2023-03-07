@@ -145,8 +145,6 @@
     width: 100%;
 
 }
-
-}
 .head_content {
     display: flex;
     align-items: center;
@@ -211,6 +209,7 @@ span {
     align-items: center;
     font-family: 'VAGRoundedStd-Bold';
     gap: 1rem;
+    font-style: normal;
 }
 
 .subt_contrato {
@@ -224,18 +223,18 @@ span {
 
 .calculadora {
     justify-content: center;
+    margin: 1%;
 }
 
 .calculadora_content {
     background-color: var(--light-grey);
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 2fr;
     padding: 0.5rem;
-    gap: .5rem;
     border-radius: 1rem;
 }
 
-.number {
+.number, .imagen {
+    width: 2.5rem;
+    height: 2.5rem;
     font-family: 'VAGRoundedStd-Bold';
     cursor: pointer;
     border-radius: 2rem;   
@@ -248,6 +247,10 @@ span {
     box-sizing: border-box;
 }
 
+.imagen img{
+    width: 1.8rem;
+    padding-right: .4rem;
+}
 
 .function {
     font-family: 'VAGRoundedStd-Bold';
@@ -257,7 +260,8 @@ span {
     font-size: 1rem;
     line-height: 1.7rem;
     border-radius: 2rem;
-    padding: .5rem;
+    box-sizing: border-box;
+    height: 2.5rem;
 }
 
 button:active {
@@ -273,6 +277,8 @@ button:focus {
 .cancelar { 
     border: 2.04334px solid var(--grey);
     color:var(--dark-grey);
+    padding: .3rem .3rem;
+    
 }
 
 .link_cancelar:visited {
@@ -282,21 +288,14 @@ button:focus {
 .borrar { 
     border: 2.04334px solid var(--dark-green);
     color: var(--dark-green);
+    padding: .2rem 0;
 }
 
 .continuar {
     border: none;
     background-color: var(--green);
     color: #ffffff;
-}
-
-.none {
-    background-color: var(--light-grey);
-    border: transparent;
-}
-
-.none:active {
-    background-color: var(--light-grey);
+    padding: .3rem .3rem .3rem .3rem;
 }
 
 .display {
@@ -443,4 +442,30 @@ button:focus {
     padding: 15px 28px 15px 24px;
     border-radius: 8px;
     left: 10%
+}
+.botones {
+    display: flex;
+    margin-top: 1%;
+}
+
+.numeros {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    grid-template-rows: auto;
+    grid-gap: .2rem;
+}
+
+.otros {
+    display: grid;
+    align-items: center;
+    margin: 0 2%;
+    grid-gap: .2rem;
+}
+
+.cero {
+    display: flex;
+    justify-content: center;
+    grid-column: 1/4;
 }
