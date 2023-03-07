@@ -268,6 +268,7 @@ body{
     color: var(--dark-grey);
 }
 
+
 .img_1{
     width:100px;
 }
@@ -283,6 +284,15 @@ body{
 /* MAIN AYUDA AL PLANETA */
 .support-container{
     justify-content: center;
+}
+
+.container_separacionEnergia {
+    width: 100%;
+
+}
+.head_content {
+    display: flex;
+    align-items: center;
 }
 
 .title__support{
@@ -304,6 +314,15 @@ body{
 
 .img__awareness{
     width: 400px;
+}
+
+.head_content2 .title__main {
+    color: var(--dark-grey);
+    font-size: 1.5rem;
+    margin: 2% 1% 1% 13%;
+}
+.bulb {
+    width: 2rem;
 }
 
 .title__awareness{
@@ -334,6 +353,14 @@ body{
     margin-left: -10%;
 }
 
+span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: -10%;
+}
+
 .decision-container{
     display: flex;
     flex-direction: column;
@@ -348,6 +375,7 @@ body{
     border-radius: 16px;
     left: 14.5%;
     margin-top: 1%;
+
 }
 
 .title__decision{
@@ -373,6 +401,10 @@ body{
     display: flex;
 }
 
+.house {
+    width: 2rem;
+}
+
 .button__support{
     box-sizing: border-box;
     width: 300px;
@@ -386,23 +418,18 @@ body{
     line-height: 36px;
 }
 
-.button__white{
-    color: var(--dark-green);
-    border: 1.60588px solid var(--dark-green);
-    border-radius: 32.1176px;
-    transition: all 0.3s ease-in-out;
-    cursor: pointer;
+.subt_contrato {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1rem;
+    margin-top: 3%;
+    line-height: 1.7rem;
+    color: var(--dark-grey);
 }
 
-.button__white:hover{
-    background-color: var(--dark-green);
-    color: white;
-
-    border: 1.60588px solid var(--dark-green);
-    border-radius: 32.1176px;
-
-    transform: translateY(-1px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0px 3px 12px rgba(0, 0, 0, 0.1);
+.calculadora {
+    justify-content: center;
+    margin: 1%;
 }
 
 .button__green{
@@ -435,33 +462,23 @@ body{
 
 .calculadora_content {
     background-color: var(--light-grey);
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 2fr;
     padding: 0.5rem;
-    gap: .4rem;
     border-radius: 1rem;
 }
 
 .number, .imagen {
-    width: 3rem;
-    height: 3rem;
+    width: 2.5rem;
+    height: 2.5rem;
     font-family: 'VAGRoundedStd-Bold';
-    font-style: normal;
     cursor: pointer;
     border-radius: 2rem;   
-    font-size: 1.8rem;
+    font-size: 2rem;
     border: none;
     background-color: #ffffff;
     justify-content: center;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3), 0px 3px 12px rgba(0, 0, 0, 0.1);
     color: var(--dark-green);
     box-sizing: border-box;
-}
-
-.imagen {
-    width: 3rem;
-    height: 3rem;
-    color: #ffffff;
 }
 
 .imagen img{
@@ -471,14 +488,14 @@ body{
 
 .function {
     font-family: 'VAGRoundedStd-Bold';
-    font-style: normal;
     background-color: #ffffff;
+    font-style: normal;
     font-weight: 700;
     font-size: 1rem;
     line-height: 1.7rem;
     border-radius: 2rem;
-    padding: .6rem;
-    width: 100%;
+    box-sizing: border-box;
+    height: 2.5rem;
 }
 
 button:active {
@@ -494,6 +511,8 @@ button:focus {
 .cancelar { 
     border: 2.04334px solid var(--grey);
     color:var(--dark-grey);
+    padding: .3rem .3rem;
+    
 }
 
 .link_cancelar:visited {
@@ -503,28 +522,21 @@ button:focus {
 .borrar { 
     border: 2.04334px solid var(--dark-green);
     color: var(--dark-green);
+    padding: .2rem 0;
 }
 
 .continuar {
     border: none;
     background-color: var(--green);
     color: #ffffff;
-}
-
-.none {
-    background-color: var(--light-grey);
-    border: transparent;
-}
-
-.none:active {
-    background-color: var(--light-grey);
+    padding: .3rem .3rem .3rem .3rem;
 }
 
 .display {
-    display: block;
     font-family: 'VAGRoundedStd-Thin';
-    font-style: normal;
+    font-weight: bold;
     background-color: #ffffff;
+    width: 100%;
     height: 2.5rem;
     grid-column: 1/-1;
     padding-right: 4%;
@@ -532,6 +544,7 @@ button:focus {
     border-radius: 2rem;
     font-size: 2rem;
     border: 3px solid var(--dark-green);
+    
 }
 
 .select_factura {
@@ -550,8 +563,7 @@ button:focus {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     align-items: center;
-    justify-content: center;
-    text-align: center;    
+    justify-content: center;    
 }
 
 .energy_card:hover,
@@ -593,4 +605,101 @@ button:focus {
 .select_factura div a p {
     font-size: 1.6rem;
     color: #ffffff;
+}
+
+
+/* cupones factura*/
+.cupones-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+    .cupones-container .title__main {
+        font-size: 1.5rem;
+        color: var(--dark-grey);
+        margin: 1% 1% 1% 1%;
+    }
+    .cupones-container .stitle-cupon {
+        width: 100%;
+        font-family: 'VAGRoundedStd-Bold';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 4rem;
+        line-height: 0rem;
+        color: var(--green);
+        margin: 1% 1% 1% 1%;
+    }
+.stitle-cupon {
+    width: 100%;
+    font-family: 'VAGRoundedStd-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 0rem;
+    color: var(--green);
+    margin: 1% 1% 1% 13%;
+}
+
+/*Enviar correo*/
+.teclado {
+    justify-content: center;
+}
+
+.teclado_content {
+    background-color: var(--light-grey);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 2fr;
+    padding: 0.5rem;
+    gap: .5rem;
+    border-radius: 1rem;
+}
+    .teclado_content .correos {
+        font-family: 'VAGRoundedStd-Bold';
+        cursor: pointer;
+        border-radius: 2rem;
+        font-size: 2rem;
+        border: none;
+        background-color: #ffffff;
+        justify-content: center;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3), 0px 3px 12px rgba(0, 0, 0, 0.1);
+        color: var(--dark-green);
+        box-sizing: border-box;
+        grid-column:span 4;
+        /*grid-template-columns: 1fr 1fr 3fr;*/
+    }
+.eCorreo {
+    border: none;
+    background-color: var(--dark-green);
+    color: #ffffff;
+    padding: 15px 28px 15px 24px;
+    border-radius: 8px;
+    left: 10%
+}
+.botones {
+    display: flex;
+    margin-top: 1%;
+}
+
+.numeros {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    grid-template-rows: auto;
+    grid-gap: .2rem;
+}
+
+.otros {
+    display: grid;
+    align-items: center;
+    margin: 0 2%;
+    grid-gap: .2rem;
+}
+
+.cero {
+    display: flex;
+    justify-content: center;
+    grid-column: 1/4;
 }
