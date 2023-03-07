@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles.css">
-    <title>Cuponeras</title>
+    <title>Separación de energía</title>
 </head>
 
 <body>
@@ -31,23 +31,30 @@
             <div class="calculadora">
                 <div class="calculadora_content">
                     <div class="display" id="display"></div>
+                    <div class="botones">
+                    <div class="numeros">
                         <button class="button number" id="1">1</button>
                         <button class="button number" id="2">2</button>
                         <button class="button number" id="3">3</button>
-                        <a class="link_continuar" href="#"><button class="button function continuar" id="continue">Continuar</button></a>
                         <button class="button number" id="4">4</button>
                         <button class="button number" id="5">5</button>
                         <button class="button number" id="6">6</button>
-                        <button class="button function borrar" id="clear">Borrar</button>
+                        
                         <button class="button number" id="7">7</button>
                         <button class="button number" id="8">8</button>
                         <button class="button number" id="9">9</button>
+                        
+                        <!-- <button class="none"></button> -->
+                        <div class="cero"><button class="button number" id="0">0</button></div>
+                        <!-- <button class="none"></button> -->
+                    </div>
+                    <div class="otros">
+                        <a class="link_continuar" href="#"><button class="button function continuar" id="continue">Continuar</button></a>
+                        <button class="button function borrar" id="clear">Borrar</button>
                         <a class="link_cancelar" href="../views/separacionFacturas.html"><button class="button function cancelar" id="cancel">Cancelar</button></a>
-                        <button class="none"></button>
-                            <button class="button number" id="0">0</button>
-                            <button class="none"></button>
-                            <button class="button imagen" id="undo"><img src="../assets/images/Vector(Stroke).svg"></button>
-                </div>                    
+                        <button class="button imagen" id="undo"><img src="../assets/images/Vector(Stroke).svg">
+                    </div>
+                </div>                  
             </div>
         </div>
         

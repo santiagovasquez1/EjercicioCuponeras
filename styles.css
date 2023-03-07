@@ -206,7 +206,6 @@ span {
     align-items: center;
     font-family: 'VAGRoundedStd-Bold';
     font-style: normal;
-    gap: 1rem;
 }
 
 .subt_contrato {
@@ -219,20 +218,18 @@ span {
 
 .calculadora {
     justify-content: center;
+    margin: 1%;
 }
 
 .calculadora_content {
     background-color: var(--light-grey);
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 2fr;
     padding: 0.5rem;
-    gap: .4rem;
     border-radius: 1rem;
 }
 
 .number, .imagen {
-    width: 3rem;
-    height: 3rem;
+    width: 2.5rem;
+    height: 2.5rem;
     font-family: 'VAGRoundedStd-Bold';
     font-style: normal;
     cursor: pointer;
@@ -244,12 +241,6 @@ span {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3), 0px 3px 12px rgba(0, 0, 0, 0.1);
     color: var(--dark-green);
     box-sizing: border-box;
-}
-
-.imagen {
-    width: 3rem;
-    height: 3rem;
-    color: #ffffff;
 }
 
 .imagen img{
@@ -265,8 +256,8 @@ span {
     font-size: 1rem;
     line-height: 1.7rem;
     border-radius: 2rem;
-    padding: .6rem;
-    width: 100%;
+    box-sizing: border-box;
+    height: 2.5rem;
 }
 
 button:active {
@@ -282,6 +273,8 @@ button:focus {
 .cancelar { 
     border: 2.04334px solid var(--grey);
     color:var(--dark-grey);
+    padding: .3rem .3rem;
+    
 }
 
 .link_cancelar:visited {
@@ -291,21 +284,14 @@ button:focus {
 .borrar { 
     border: 2.04334px solid var(--dark-green);
     color: var(--dark-green);
+    padding: .2rem 0;
 }
 
 .continuar {
     border: none;
     background-color: var(--green);
     color: #ffffff;
-}
-
-.none {
-    background-color: var(--light-grey);
-    border: transparent;
-}
-
-.none:active {
-    background-color: var(--light-grey);
+    padding: .3rem .3rem .3rem .3rem;
 }
 
 .display {
@@ -381,4 +367,31 @@ button:focus {
 .select_factura div a p {
     font-size: 1.6rem;
     color: #ffffff;
+}
+
+.botones {
+    display: flex;
+    margin-top: 1%;
+}
+
+.numeros {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    grid-template-rows: auto;
+    grid-gap: .2rem;
+}
+
+.otros {
+    display: grid;
+    align-items: center;
+    margin: 0 2%;
+    grid-gap: .2rem;
+}
+
+.cero {
+    display: flex;
+    justify-content: center;
+    grid-column: 1/4;
 }
