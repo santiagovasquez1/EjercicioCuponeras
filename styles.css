@@ -23,9 +23,6 @@
     --light-grey: #F6F6F6;
     --grey: #B9BBBB;
     --dark-grey: #707070;
-
-    --box-shadow:  0px 1px 3px rgba(0, 0, 0, 0.3), 0px 3px 12px rgba(0, 0, 0, 0.1);
-    --box-shadow-hedaer: box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 *{
@@ -39,7 +36,6 @@
 header{
     position: fixed;
     background-color: white;
-    top: 0;
     z-index: 1;
 }
 
@@ -154,10 +150,10 @@ body{
     margin-right: 17px;
 }
 
-
-
 /* HEADER */
 .header-container{
+    position: absolute;
+    top: 0;
     display: flex;
     align-items: center;
     width: 100%;
@@ -165,9 +161,12 @@ body{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.logo__header{
+    Width: 185px;
+}
+
 .title__header{
     font-family: 'VAGRoundedStd-bold';
-
     font-style: normal;
     font-size: 2.3rem;
     font-weight: 700;
@@ -180,11 +179,10 @@ body{
 .line__header{
     width: 2px;
     height: 55px;
-
     background-color: var(--grey);
     margin-right: 2%;
+    margin-left: 5px;
 }
-
 
 .title__main{
     font-family: 'VAGRoundedStd-Bold';
@@ -203,7 +201,7 @@ body{
     justify-content: center;
     align-items: center;
     grid-template-rows: auto;
-    margin: 2% 5.5%;
+    margin: 110px 5.5%;
 }
 
 .card-row{
@@ -288,8 +286,8 @@ body{
 
 .container_separacionEnergia {
     width: 100%;
-
 }
+
 .head_content {
     display: flex;
     align-items: center;
@@ -303,6 +301,7 @@ body{
     line-height: 36px;
     color: var(--dark-green);
     margin: 2% 4%;
+    margin-top: 170px;
 }
 
 .right-side__awareness{
@@ -375,7 +374,6 @@ span {
     border-radius: 16px;
     left: 14.5%;
     margin-top: 1%;
-
 }
 
 .title__decision{
@@ -435,29 +433,38 @@ span {
 .button__green{
     color: white;
     background-color: var(--green);
-
     border: 1.60588px solid var(--green);
     border-radius: 32.1176px;
-
     transition: all 0.3s ease-in-out;
-
     cursor: pointer;
 }
 
 .button__green:hover{
-    background-color: var(--dark-green);
+    background-color: var(--light-green);
     color: white;
-
-    border: 1.60588px solid var(--dark-green);
+    border: 1.60588px solid var(--light-green);
     border-radius: 32.1176px;
-
     transform: translateY(-1px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0px 3px 12px rgba(0, 0, 0, 0.1);
 }
 
 
+.button__white{
+    color: var(--dark-green);
+    border: 1.60588px solid var(--dark-green);
+    border-radius: 32.1176px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
 
-
+.button__white:hover{
+    background-color: var(--dark-green);
+    color: white;
+    border: 1.60588px solid var(--dark-green);
+    border-radius: 32.1176px;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0px 3px 12px rgba(0, 0, 0, 0.1);
+}
 
 
 .calculadora_content {
