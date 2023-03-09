@@ -23,6 +23,8 @@
     --light-grey: #F6F6F6;
     --grey: #B9BBBB;
     --dark-grey: #707070;
+    --box-shadow:  0px 1px 3px rgba(0, 0, 0, 0.3), 0px 3px 12px rgba(0, 0, 0, 0.1);
+    --box-shadow-hedaer: box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 *{
@@ -113,6 +115,58 @@ body{
     position: absolute;
     right: 80px;
     top: 170px;
+}
+
+.route, .route_correo {
+    position: absolute;
+    top: 225px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'VAGRoundedStd-Thin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    margin: 0 4% 0 0;
+    padding-left: 11%;
+    color: var(--dark-grey); 
+}
+
+.route_correo {
+    justify-content: end;
+}
+
+span {
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    margin-left: 10%;
+}
+
+.link_inicio {
+    display: flex;
+    text-decoration-line: underline;
+    gap: 8%;
+    margin-right: 8%;    
+    color: var(--dark-green); 
+}
+
+.link_inicio a:visited {
+    color: var(--dark-green); 
+} 
+
+.arrow_r {
+    width: 4%;
+}
+
+.arrow_l {
+    width: 8%;
+}
+
+.house {
+    width: 2rem;
+    margin-left: 5%;
 }
   
 .nav__home {
@@ -240,6 +294,7 @@ body{
     gap: 6px;
     border-radius: 20px 20px 0px 0px;
     padding: 16px 12px 8px;
+    height: 135px;
     height: 215px;
 }
 
@@ -266,7 +321,6 @@ body{
     color: var(--dark-grey);
 }
 
-
 .img_1{
     width:100px;
 }
@@ -284,6 +338,17 @@ body{
     justify-content: center;
 }
 
+.in_contrato {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'VAGRoundedStd-Bold';
+    gap: 1rem;
+    font-style: normal;
+    height: 50%;
+}
+
 .container_separacionEnergia {
     width: 100%;
 }
@@ -291,9 +356,14 @@ body{
 .head_content {
     display: flex;
     align-items: center;
+    justify-content: center;
+    justify-items: center;
+    height: 10%;
 }
 
-.title__support{
+.title__support,
+.separacion,
+.separacion_energia {
     font-family: 'VAGRoundedStd-Bold';
     font-style: normal;
     font-weight: 700;
@@ -302,6 +372,16 @@ body{
     color: var(--dark-green);
     margin: 2% 4%;
     margin-top: 170px;
+}
+
+.separacion {
+    color: var(--dark-grey);
+    font-size: 2.7rem;
+    font-weight: 900;
+}
+
+.separacion_energia {
+    color: var(--yellow);
 }
 
 .right-side__awareness{
@@ -320,8 +400,10 @@ body{
     font-size: 1.5rem;
     margin: 2% 1% 1% 13%;
 }
+
 .bulb {
-    width: 2rem;
+    margin-left: 1.2%;
+    width: 2.5%;
 }
 
 .title__awareness{
@@ -403,11 +485,10 @@ span {
     width: 2rem;
 }
 
-.button__support{
+.button__support {
     box-sizing: border-box;
     width: 300px;
     height: 45px;
-    margin-right: 4%;
     background: white;
     font-family: 'VAGRoundedStd-Bold';
     font-style: normal;
@@ -416,10 +497,14 @@ span {
     line-height: 36px;
 }
 
+.link__button__support {
+    margin-right: 4%;
+}
+
 .subt_contrato {
     font-style: normal;
-    font-weight: 700;
-    font-size: 1rem;
+    font-weight: 400;
+    font-size: 1.6rem;
     margin-top: 3%;
     line-height: 1.7rem;
     color: var(--dark-grey);
@@ -428,6 +513,8 @@ span {
 .calculadora {
     justify-content: center;
     margin: 1%;
+    width: 370px;
+    height: 360px;
 }
 
 .button__green{
@@ -448,7 +535,6 @@ span {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0px 3px 12px rgba(0, 0, 0, 0.1);
 }
 
-
 .button__white{
     color: var(--dark-green);
     border: 1.60588px solid var(--dark-green);
@@ -466,20 +552,20 @@ span {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0px 3px 12px rgba(0, 0, 0, 0.1);
 }
 
-
 .calculadora_content {
+    justify-content: center;
     background-color: var(--light-grey);
-    padding: 0.5rem;
+    padding: 0.7rem;
     border-radius: 1rem;
 }
 
 .number, .imagen {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 4rem;
+    height: 4rem;
     font-family: 'VAGRoundedStd-Bold';
     cursor: pointer;
-    border-radius: 2rem;   
-    font-size: 2rem;
+    border-radius: 4rem;   
+    font-size: 2.7rem;
     border: none;
     background-color: #ffffff;
     justify-content: center;
@@ -489,7 +575,7 @@ span {
 }
 
 .imagen img{
-    width: 1.8rem;
+    width: 2.8rem;
     padding-right: .4rem;
 }
 
@@ -498,11 +584,12 @@ span {
     background-color: #ffffff;
     font-style: normal;
     font-weight: 700;
-    font-size: 1rem;
+    font-size: 1.5rem;
     line-height: 1.7rem;
     border-radius: 2rem;
     box-sizing: border-box;
-    height: 2.5rem;
+    height: 3.8rem;
+    width: 100%;
 }
 
 button:active {
@@ -518,8 +605,7 @@ button:focus {
 .cancelar { 
     border: 2.04334px solid var(--grey);
     color:var(--dark-grey);
-    padding: .3rem .3rem;
-    
+    padding: .3rem .3rem;    
 }
 
 .link_cancelar:visited {
@@ -544,18 +630,21 @@ button:focus {
     font-weight: bold;
     background-color: #ffffff;
     width: 100%;
-    height: 2.5rem;
+    height: 3.5rem;
     grid-column: 1/-1;
     padding-right: 4%;
     text-align: right;
     border-radius: 2rem;
-    font-size: 2rem;
+    font-size: 2.5rem;
     border: 3px solid var(--dark-green);
-    
 }
 
 .select_factura {
+    width: 80%;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: .5%;
 }
 
 .energy_card,
@@ -563,12 +652,12 @@ button:focus {
 .gas_card,
 .state_card {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3), 0px 3px 12px rgba(0, 0, 0, 0.1);
-    border-radius: .6rem;
-    padding: 2rem 1rem;
-    margin: .4rem;
+    border-radius: 1.2rem;
+    margin: .6rem;
     cursor: pointer;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
     align-items: center;
     justify-content: center;    
 }
@@ -604,16 +693,16 @@ button:focus {
 }
 
 .select_factura div a img {
-    width: 3rem;
-    height: 3rem;
-    margin: 1rem;
+    width: 5rem;
+    height: 5rem;
+    margin: 1rem 2rem;
 }
 
 .select_factura div a p {
-    font-size: 1.6rem;
+    font-size: 2.6rem;
     color: #ffffff;
+    text-align: center;
 }
-
 
 /* cupones factura*/
 .cupones-container {
@@ -621,32 +710,29 @@ button:focus {
     align-items: center;
     justify-content: center;
     text-align: center;
-    
+    width: 100%;
 }
     .cupones-container .title__main {
         font-size: 1.5rem;
         color: var(--dark-grey);
         margin: 1% 1% 1% 1%;
+        padding-top: 2%;
     }
     .cupones-container .stitle-cupon {
         width: 100%;
         font-family: 'VAGRoundedStd-Bold';
         font-style: normal;
         font-weight: 700;
-        font-size: 4rem;
+        font-size: 4.5rem;
         line-height: 0rem;
-        color: var(--green);
-        margin: 1% 1% 1% 1%;
+        color: var(--dark-green);
+        margin-top: .4%;
     }
-.stitle-cupon {
+
+.button-mail {
     width: 100%;
-    font-family: 'VAGRoundedStd-Bold';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 4rem;
-    line-height: 0rem;
-    color: var(--green);
-    margin: 1% 1% 1% 13%;
+    justify-items: start;
+    margin-left: 8%;
 }
 
 /*Enviar correo*/
@@ -662,6 +748,7 @@ button:focus {
     gap: .5rem;
     border-radius: 1rem;
 }
+
     .teclado_content .correos {
         font-family: 'VAGRoundedStd-Bold';
         cursor: pointer;
@@ -676,17 +763,31 @@ button:focus {
         grid-column:span 4;
         /*grid-template-columns: 1fr 1fr 3fr;*/
     }
+
 .eCorreo {
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    font-family: 'VAGRoundedStd-Thin';
     border: none;
     background-color: var(--dark-green);
     color: #ffffff;
-    padding: 15px 28px 15px 24px;
+    padding: 1.5rem 2.8rem;
     border-radius: 8px;
-    left: 10%
+    font-size: 1.5rem;
+    gap: .6rem;
 }
+
+.img-ecorreo {
+    width: 3rem;
+    border: bold;
+}
+
 .botones {
     display: flex;
     margin-top: 1%;
+    width: 100%;
+    height: 100%;
 }
 
 .numeros {
@@ -695,14 +796,15 @@ button:focus {
     justify-content: center;
     align-items: center;
     grid-template-rows: auto;
-    grid-gap: .2rem;
+    gap: .4rem;
 }
 
 .otros {
     display: grid;
     align-items: center;
     margin: 0 2%;
-    grid-gap: .2rem;
+    grid-gap: .6rem;
+    width: 100%;
 }
 
 .cero {

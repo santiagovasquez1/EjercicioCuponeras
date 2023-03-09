@@ -1,31 +1,24 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Separación de facturas de energia</title>
     <link rel="stylesheet" href="../styles.css">
-    <title>Separación de energía</title>
 </head>
-
 <body>
     <header class="header-container">
         <h2 class="title__header">Módulos de auto gestión</h2>
         <span class="line__header"></span>
         <img class="logo__header" src="../assets/images/LogoEPM.svg" alt="epm-logo">
     </header>
-    <main class="main-container">
-
-        <div class="head_content">
-            <h1 class="title__main">Separación de facturas de energía <img class="bulb" src="../assets/images/EnergíaAmarillo.svg" /></h1>
-        </div>
-
-        <div class="route">
-            <span>Inicio <img class="arrow_r" src="../assets/images/flecha-derecha.png"> Separación de facturas <img class="arrow_r" src="../assets/images/flecha-derecha.png"> Energía</span>
-            <span class="link_inicio"> <img class="arrow_l" src="../assets/images/flecha-izquierda.png" /> <a href="../views/separacionFacturas.html">Volver</a> <img class="house" src="../assets/images/Casa.svg" /> <a href="../index.html">Ir a inicio</a></span>
-        </div>
-
+    <div class="route">
+        <span>Inicio <img class="arrow_r" src="../assets/images/flecha-derecha.png">Separación de facturas<img class="arrow_r" src="../assets/images/flecha-derecha.png">Energía</span>
+        <span class="link_inicio"> <img class="arrow_l" src="../assets/images/flecha-izquierda.png" /> <a href="./separacionFacturas.html">Volver</a> <img class="house" src="../assets/images/Casa.svg" /> <a href="../index.html">Ir a inicio</a></span>
+    </div>
+    <main class="support-container">
+        <h1 class="separacion_energia">Separación de facturas de energía<img class="bulb" src="../assets/images/EnergíaAmarillo.svg" /></h1>
         <div class="in_contrato">    
             <h4 class="subt_contrato">Digita el número del contrato</h4>
             <div class="calculadora">
@@ -39,28 +32,21 @@
                         <button class="button number" id="4">4</button>
                         <button class="button number" id="5">5</button>
                         <button class="button number" id="6">6</button>
-                        
                         <button class="button number" id="7">7</button>
                         <button class="button number" id="8">8</button>
                         <button class="button number" id="9">9</button>
-                        
-                        <!-- <button class="none"></button> -->
                         <div class="cero"><button class="button number" id="0">0</button></div>
-                        <!-- <button class="none"></button> -->
                     </div>
                     <div class="otros">
-                        <a class="link_continuar" href="#"><button class="button function continuar" id="continue">Continuar</button></a>
+                        <a href="./ayuda-planeta.html"><button class="button function continuar" id="continue" href="./ayuda-planeta.html">Continuar</button></a>
                         <button class="button function borrar" id="clear">Borrar</button>
-                        <a class="link_cancelar" href="../views/separacionFacturas.html"><button class="button function cancelar" id="cancel">Cancelar</button></a>
+                        <a href="./separacionFacturas.html"><button class="button function cancelar" id="cancel">Cancelar</button></a>
                         <button class="button imagen" id="undo"><img src="../assets/images/Vector(Stroke).svg">
                     </div>
                 </div>                  
             </div>
         </div>
-        
     </main>
-
     <script src="../scripts/funcionTecladoSeparacionEnergia.js"></script>
 </body>
-
 </html>
